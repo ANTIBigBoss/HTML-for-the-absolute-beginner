@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mitchell - This is Nacho Order Form</title>
+</head>
+
+<body>
+  <h1>Nacho Order Form</h1>
+  <form>
+    <fieldset>
+      <legend>Order Information</legend>
+
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" required><br><br>
+
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" required><br><br>
+
+      <label for="size">Size:</label>
+      <select id="size" name="size" required>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select><br><br>
+
+      <fieldset>
+        <legend>Toppings:</legend>
+        <input type="checkbox" id="cheese" name="toppings" value="cheese">
+        <label for="cheese">Cheese</label><br>
+        <input type="checkbox" id="salsa" name="toppings" value="salsa">
+        <label for="salsa">Salsa</label><br>
+        <input type="checkbox" id="guacamole" name="toppings" value="guacamole">
+        <label for="guacamole">Guacamole</label><br>
+        <input type="checkbox" id="sour_cream" name="toppings" value="sour_cream">
+        <label for="sour_cream">Sour Cream</label><br>
+        <input type="checkbox" id="jalapenos" name="toppings" value="jalapenos">
+        <label for="jalapenos">Jalapenos</label><br>
+        <input type="checkbox" id="black_olives" name="toppings" value="black_olives">
+        <label for="black_olives">Black Olives</label>
+      </fieldset><br>
+
+      <label for="special_instructions">Special Instructions:</label><br>
+      <textarea id="special_instructions" name="special_instructions" rows="4" cols="50"></textarea><br><br>
+
+      <label for="phone_number">Phone Number:</label>
+      <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+    
+      <input type="submit" value="Submit">
+    </fieldset>
+</form>
+</body>
+</html>
